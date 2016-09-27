@@ -1,0 +1,16 @@
+<html>
+<body style="background-image:url(http://www.desktopimages.org/pictures/2013/1122/1/dragonite-pokemon-wallpaper-56979.jpg)">
+  <h1 style="color:blue"> Hillary </h1>
+  <h3 style="color: green"> Grass
+       </h3>
+       <p> HP 70__________________ATK 70__________________DEF 100 </p>
+    <img src="https://grrrgraphics.files.wordpress.com/2016/05/clintons_snakes_in_grass.jpg?w=640" height="420" width="420" />
+    <p style="color:blue"> Basic Attack: Hiss</p>
+    <p style="color:blue"> Special Attack: Dig</p>
+
+    <a href="file:///Users/George/Desktop/Northeastern/2016-SWC/ps-02/index.html">
+      <button type= button >Click Me! </button>
+    </a>
+    
+</body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+<body style="background-image:url(https://images.designtrends.com/wp-content/uploads/2015/11/06043811/Pokemon-Background-Designs40.jpg)">
+  <h1 style="color:navy"> Obama </h1>
+  <h3 style="color: orange"> Electric
+       </h3>
+       <p> HP 100_______________ATK 100_______________DEF 100 </p>
+    <img src="http://img09.deviantart.net/a265/i/2015/124/a/c/obama_caricature_by_redgvicente-d1thjhx.jpg" height="420" width="320" />
+    <p style="color:blue"> Basic Attack: Orate</p>
+    <p style="color:blue"> Special Attack: Polarize</p>
+
+    <a href="file:///Users/George/Desktop/Northeastern/2016-SWC/ps-02/index.html">
+      <button type= button >Click Me! </button>
+    </a>
+
+</body>
+</html>
