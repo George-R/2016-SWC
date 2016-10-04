@@ -24,3 +24,8 @@ h2 {
     margin-left: 200px;
     margin-right: 200px;
 }
+
+links {
+  color: hsla(0, 25%, 50%, 1.0);
+  text-transform: lowercase;
+}

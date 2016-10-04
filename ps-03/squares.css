@@ -11,9 +11,10 @@ body {
 }
 
 canvas {
-  border: 5px solid hsl(0,10%,90%);
+  border: 0.5px solid hsl(0,10%,90%);
   width: auto;
   height: 50%;
   transform: rotate(45deg);
+  background-color: silver
 
 }
