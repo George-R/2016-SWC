@@ -1,5 +1,5 @@
 var myCanvas = document.getElementById('canvas');
- var ctx = myCanvas.getContext('2d');
+ var drawingPad = myCanvas.getContext('2d');
 
  // @params:
  // hue -- number 0-360 (think color wheel degrees)
