@@ -28,7 +28,7 @@ var myCanvas = document.getElementById('canvas');
 
  for(var x = 0 ; x < numX; x++) {
    for(var y = 0 ; y < numY; y++) {
-     Lightness = x;
+     Lightness = y;
      drawingPad.fillStyle = getColor(0, 0, Lightness, 1);
      drawSquare(x,y,size);
 

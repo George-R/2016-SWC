@@ -1,0 +1,58 @@
+body {
+  font-family: 'helvetica', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  
+}
+
+#canvas {
+  margin-left: 0px;
+  margin-top: 400px;
+  border: 0.5px solid hsl(0,10%,90%.0);
+  width: auto;
+  height: 15%;
+  transform: rotate(0deg);
+  background-color: white
+
+}
+
+#canvas2 {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 0px;
+  border: 0.5px solid hsl(0,10%,90%,0);
+  width: auto;
+  height: 15%;
+  transform: rotate(122deg);
+  background-color: white
+
+}
+
+#canvas3 {
+  margin-left: 0px;
+  margin-top: 400px;
+  border: 0.5px solid hsl(0,10%,90%,0);
+  width: auto;
+  height: 15%;
+  transform: rotate(242deg);
+  background-color: white
+
+
+}
+
+#Question{
+  align-self: baseline;
+}
+
+h4 {
+  margin-top: 600px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}

@@ -1,0 +1,73 @@
+body {
+  font-family: 'helvetica', sans-serif;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+
+#canvas {
+  border: 0.5px solid hsl(0,10%,90%,0);
+  width: auto;
+  height: 5%;
+  background-color: hsl(0,0%,100%,0)
+}
+
+#canvas2 {
+  transform: rotate(15deg);
+  border: 0.5px solid hsl(0,10%,90%,0);
+  width: auto;
+  height: 15%;
+  background-color: hsl(0,10%,90%,0);
+
+}
+
+#canvas3 {
+transform: rotate(30deg);
+border: 0.5px solid hsl(0,10%,90%,0);
+width: auto;
+height: 25%;
+background-color: hsl(0,10%,90%,0);
+}
+
+#canvas4 {
+  transform: rotate(45deg);
+  border: 0.5px solid hsl(0,10%,90%,0);
+  width: auto;
+  height: 35%;
+  background-color: hsl(0,10%,90%,0);
+
+}
+
+#canvas5 {
+  transform: rotate(60deg);
+  border: 0.5px solid hsl(0,10%,90%,0);
+  width: auto;
+  height: 25%;
+  background-color: hsl(0,10%,90%,0);
+
+}
+
+#canvas6 {
+  transform: rotate(75deg);
+  border: 0.5px solid hsl(0,10%,90%,0);
+  width: auto;
+  height: 15%;
+  background-color: hsl(0,10%,90%,0);
+}
+
+#canvas7 {
+  transform: rotate(90deg);
+  border: 0.5px solid hsl(0,10%,90%,0);
+  width: auto;
+  height: 5%;
+  background-color: hsl(0,10%,90%,0);
+}
+
+h4{
+  margin-right: 200px
+}
