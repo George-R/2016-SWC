@@ -43,27 +43,59 @@ var drawImage = function(filename, ctx, x, y) {
 
 GeorgeR.drawArm = function(ctx, left) {
   ctx.beginPath();
-  ctx.moveTo(horizontalCenter,y1+25);
-  ctx.lineTo(x0,y2);
+  ctx.moveTo(horizontalCenter,y1+50);
+  ctx.lineTo(horizontalCenter-100,y1+50);
+  ctx.stroke();
+  ctx.lineWidth=50;
+};
+
+GeorgeR.drawArmL = function(ctx, left) {
+  ctx.beginPath();
+  ctx.moveTo(horizontalCenter-82,y1+44);
+  ctx.lineTo(horizontalCenter-150,y1+100);
   ctx.stroke();
   ctx.lineWidth=50;
 };
 
 GeorgeR.drawArm2 = function(ctx, right) {
   ctx.beginPath();
-  ctx.moveTo(horizontalCenter,y1+25);
-  ctx.lineTo(x3,y2);
+  ctx.moveTo(horizontalCenter,y1+50);
+  ctx.lineTo(x3,y1+50);
   ctx.stroke();
 
 
 };
 
+GeorgeR.drawHip = function(ctx, left) {
+
+  ctx.beginPath();
+  ctx.moveTo(horizontalCenter-40,y2+20);
+  ctx.lineTo(horizontalCenter+40,y2+20);
+  ctx.stroke();
+
+}
+
+GeorgeR.drawTorso = function(ctx, body) {
+
+  ctx.beginPath();
+  ctx.moveTo(horizontalCenter-30,y1+40);
+  ctx.lineTo(horizontalCenter-30,y2+40);
+  ctx.stroke();
+}
+
+GeorgeR.drawTorsoR = function(ctx, body) {
+
+  ctx.beginPath();
+  ctx.moveTo(horizontalCenter+30,y1+40);
+  ctx.lineTo(horizontalCenter+30,y2+40);
+  ctx.stroke();
+}
 
 GeorgeR.drawLeg = function(ctx, left) {
 
   ctx.beginPath();
-  ctx.moveTo(horizontalCenter,y2+50);
-  ctx.lineTo(x0,y3);
+  ctx.moveTo(horizontalCenter-25,y2-5);
+  ctx.lineTo(horizontalCenter-80,y3);
   ctx.stroke();
 
 
@@ -72,8 +104,8 @@ GeorgeR.drawLeg = function(ctx, left) {
 GeorgeR.drawLeg2 = function(ctx, right) {
 
   ctx.beginPath();
-  ctx.moveTo(horizontalCenter,y2+50);
-  ctx.lineTo(x3,y3);
+  ctx.moveTo(horizontalCenter+10,y2+6.5);
+  ctx.lineTo(horizontalCenter+120,y2+120);
   ctx.stroke();
 
 
@@ -83,11 +115,12 @@ GeorgeR.drawBody = function(ctx, body) {
 
   ctx.beginPath();
   ctx.moveTo(horizontalCenter,y1-10);
-  ctx.lineTo(horizontalCenter,y2+50);
+  ctx.lineTo(horizontalCenter,y2+40);
   ctx.stroke();
   ctx.lineWidth=50
 
 };
+
 
 
 
@@ -104,14 +137,22 @@ GeorgeR.drawTop = function(ctx) {
 GeorgeR.drawMiddle = function(ctx) {
   GeorgeR.drawArm(ctx, true);
   GeorgeR.drawArm(ctx, false);
+  GeorgeR.drawArmL(ctx, true);
+  GeorgeR.drawArmL(ctx, false);
   GeorgeR.drawArm2(ctx, true);
   GeorgeR.drawArm2(ctx, false);
   GeorgeR.drawBody(ctx, true);
   GeorgeR.drawBody(ctx, false);
+  GeorgeR.drawTorso(ctx, true);
+  GeorgeR.drawTorso(ctx, false);
+  GeorgeR.drawTorsoR(ctx, true);
+  GeorgeR.drawTorsoR(ctx, false);
   // draw the rest of the body...
 };
 
 GeorgeR.drawBottom = function(ctx) {
+  GeorgeR.drawHip(ctx, true);
+  GeorgeR.drawHip(ctx, false);
   GeorgeR.drawLeg(ctx, true);
   GeorgeR.drawLeg(ctx, false);
   GeorgeR.drawLeg2(ctx, true);
