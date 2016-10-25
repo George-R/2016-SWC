@@ -21,25 +21,6 @@ var drawImage = function(filename, ctx, x, y) {
   });
 }
 
-/*GeorgeR.drawGrid = function(ctx) {
-  ctx.beginPath();
-  ctx.moveTo(x1,y0);
-  ctx.lineTo(x1,y3);
-
-  ctx.moveTo(x2,y0);
-  ctx.lineTo(x2,y3);
-
-  ctx.moveTo(x1,y0);
-  ctx.lineTo(x1,y3);
-
-  ctx.moveTo(x0,y1);
-  ctx.lineTo(x3,y1);
-
-  ctx.moveTo(x0,y2);
-  ctx.lineTo(x3,y2);
-  ctx.stroke();
-}
-*/
 
 GeorgeR.drawArm = function(ctx, left) {
   ctx.beginPath();
