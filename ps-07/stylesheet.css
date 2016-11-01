@@ -46,8 +46,9 @@ h4 {
     margin-right: 200px;
 }
 
+#canvas
  {
-  color: hsla(0, 25%, 50%, 1.0);
+  background-color: hsla(0, 0%, 20%, 1.0);
   text-transform: lowercase;
 }
 
