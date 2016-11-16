@@ -1,4 +1,4 @@
-var ctx = document.getElementById("walking").getContext('2d');
+var ctx = document.getElementById("walking2").getContext('2d');
 
 var beginX = 0;
 var beginY = 0;
