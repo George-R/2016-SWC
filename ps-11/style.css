@@ -1,0 +1,50 @@
+body {
+  font-family: "Arial Black", Gadget, sans-serif;
+  color: #silver;
+}
+
+
+h1 {
+  margin-left: 250px;
+  font-size: 20px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  color: navy;
+}
+
+h2 {
+
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: 150px;
+    margin-right: 200px;
+}
+
+#graph {
+  width: 700px;
+  margin-left: 150px;
+  margin-top: 50px;
+}
+
+svg {
+  stroke-width: 3px;
+  background-color: silver;
+
+}
+
+.xAxis path, .yAxis path{
+  stroke: navy;
+  fill: none;
+}
+
+path.plot {
+  stroke: purple;
+}
+
+h4 {
+  color: hsla(0, 25%, 50%, 1.0);
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 150px;
+    margin-right: 200px;
