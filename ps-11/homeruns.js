@@ -46,13 +46,11 @@ var HomeRuns = svg.append("text")
 		      .attr("transform", "rotate(-90)")
 		      .attr("y", 20)
 		      .attr("x", -300)
-		      .style("font-size", "20px")
 		      .text("Home Runs");
 
 var year = svg.append("text")
 		      .attr("y", 600)
-		      .attr("x", 300)
-		      .style("font-size", "20px")
+		      .attr("x", 500)
 		      .text("Year");
 
 var chart = svg
