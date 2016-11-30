@@ -1,19 +1,31 @@
-var choco = [{"Year":20,"Year":80},
-{"Year":40,"HomeRuns":60},
-{"Year":60,"HomeRuns":40},
-{"Year":80,"HomeRuns":20}];
+var data = [{"year":1,"HomeRuns":0},
+{"year":2,"HomeRuns":5},
+{"year":3,"HomeRuns":36},
+{"year":4,"HomeRuns":23},
+{"year":5,"HomeRuns":42},
+{"year":6,"HomeRuns":42},
+{"year":7,"HomeRuns":41},
+{"year":8,"HomeRuns":52},
+{"year":9,"HomeRuns":57},
+{"year":10,"HomeRuns":47},
+{"year":11,"HomeRuns":36},
+{"year":12,"HomeRuns":48},
+{"year":13,"HomeRuns":35},
+{"year":14,"HomeRuns":54},
+{"year":15,"HomeRuns":35},
+{"year":16,"HomeRuns":30}];
 
 var margin = {top: 20, right: 30, bottom: 70, left: 90};
 
-var width = 600 - margin.left - margin.right;
+var width = 1000 - margin.left - margin.right;
 var height = 600 - margin.top - margin.bottom;
 
 var x = d3.scale.linear()
-	.domain([0,90,80])
+	.domain([0,20])
     .range([0, width]);
 
 var y = d3.scale.linear()
-	.domain([0,90,80])
+	.domain([0,60])
     .range([height, 0]);
 
 var xAxis = d3.svg.axis()
@@ -37,7 +49,7 @@ var HomeRuns = svg.append("text")
 		      .style("font-size", "20px")
 		      .text("Home Runs");
 
-var Year = svg.append("text")
+var year = svg.append("text")
 		      .attr("y", 600)
 		      .attr("x", 300)
 		      .style("font-size", "20px")
@@ -45,8 +57,8 @@ var Year = svg.append("text")
 
 var chart = svg
 			.append("g")
-			.attr("width", 500)
-			.attr("height", 500)
+			.attr("width", 1000)
+			.attr("height", 600)
 			.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 chart.append("g")
@@ -59,10 +71,10 @@ chart.append("g")
   .call(yAxis);
 
 var colorScale = d3.scale.linear()
-    .range(['#231508','#754719'])
+    .range(['#070923','#6d4ca3'])
     .domain([20, 80]);
 
-var myTool = d3.select("body")
+var Tool = d3.select("body")
 
                       .append("div")
                       .attr("class", "mytooltip")
@@ -70,30 +82,32 @@ var myTool = d3.select("body")
                       .style("display", "none");
 
 var bars = chart.selectAll(".bar")
-	      .data(choco)
+	      .data(data)
 		    .enter().append("rect")
 		      .attr("class", "bar")
 		      .style("fill", function(d) { return colorScale(d.HomeRuns)})
-		      .attr("x", function(d) { return x(d.Year) - 20; })
-		      .attr("width", 40)
+		      .attr("x", function(d) { return x(d.year) - 20; })
+		      .attr("width", 20)
 		      .attr("y", function(d) { return y(d.HomeRuns); })
 		      .attr("height", function(d) { return height - y(d.HomeRuns); })
 		      .on("mouseover", function(d){
 		  		d3.select(this)
 		  			.transition()
 		  			.duration(500)
-		  			.attr("x", function(d) { return x(d.HomeRuns) - 30; })
+		  			.attr("x", function(d) { return x(d.year) - 30; })
 		  			.style("cursor", "pointer")
-		  			.attr("width", 60)
-		  			myTool
+		  			.attr("width", 40)
+            .style("fill", "yellow")
+		  			Tool
                       .transition()
                       .duration(500)
-                      .style("opacity", "1")
+                      .style("opacity", "0.5")
                       .style("display", "block")
 
-                    myTool
-                      .html(
-                      "<div id='thumbnail'><span>" + d.name + "</span><img src='" + d.image + "'/></div>"
+
+                    Tool
+                      .text(
+                      "Hello"
                       )
                       .style("left", (d3.event.pageX - 113) + "px")
                       .style("top", (d3.event.pageY - 190) + "px")
@@ -103,10 +117,11 @@ var bars = chart.selectAll(".bar")
 		  		d3.select(this)
 		  			.transition()
 		  			.duration(500)
-		  			.attr("x", function(d) { return x(d.HomeRuns) - 20; })
+            .style("fill", function(d) { return colorScale(d.HomeRuns)})
+		  			.attr("x", function(d) { return x(d.year) - 20; })
 		  			.style("cursor", "normal")
-		  			.attr("width", 40)
-		  			myTool.transition()
+		  			.attr("width", 20)
+		  			Tool.transition()
                         .duration(500)
                         .style("opacity", "0")
                         .style("display", "none")
