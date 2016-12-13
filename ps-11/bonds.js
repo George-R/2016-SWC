@@ -164,7 +164,7 @@ var bars = chart.selectAll(".bar")
 		      .on("mouseout", function(d){
 		  		d3.select(this)
 		  			.transition()
-		  			.duration(500)
+		  			.duration(490)
             .style("fill", function(d) { return colorScale(d.HomeRuns)})
 		  			.attr("x", function(d) { return x(d.year) - 10; })
 		  			.style("cursor", "normal")
