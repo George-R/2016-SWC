@@ -9,6 +9,12 @@ svg {
 	margin-top:25px;
 	padding-left: 220px;
 	font: lighter 20px "Signika";
+
+}
+
+p1 {
+	margin-left: 10px;
+	margin-top: 10px;
 }
 
 .axis path,
@@ -27,7 +33,7 @@ svg {
   flex-direction: row;
   justify-content: space-between;
   width: 1000px;
-  margin-left: 250px;
+  margin-left: 20px;
 }
 
 .action_button {
@@ -40,11 +46,14 @@ svg {
 .narrative {
 	float: right;
 	margin-top: 10px;
-	background-color: grey;
+	background-color: #F5F5DC;
 	width: 254px;
-	height: 520px;
+	height: 760px;
 	display: flex;
 	opacity: 1;
+	font: "Signika";
+	border-radius: 10px;
+
 }
 
 #Bonds {
@@ -72,20 +81,30 @@ svg {
   margin-right: 70px;
 }
 
+#Home
+{
+	font-size: 14px;
+	margin-left: 50px;
+  margin-right: 140px;
+}
+
+
+
 
 
  .mytooltip {
   position:absolute;
   text-align: center;
+	margin-top: 10px;
 	font-size: 30px;
   width: 230px;
   height:540px;
-  background-color: #EDE3D1;
+  background-color: #F5F5DC;
   border-radius: 10px;
   color: #787777;
   padding: 6px 12px;
   z-index:3;
-	float: right;
+
 }
 
 /*.mytool:after {
@@ -110,26 +129,5 @@ svg {
     margin: auto;
   }
 
-.Tool2 span {
-	display: block;
-	text-align: center;
-	width: 200px;
-	height: 800px;
-	margin: auto;
+
 }
-}
-
-.data {
-	color: green;
-}
-
-
-
-
-#thumbnail {
-    width: 200px;
-    height: auto;
-    margin: 0 auto;
-    color: #787777;
-    text-align: center;
-  }

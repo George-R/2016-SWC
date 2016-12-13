@@ -1,27 +1,26 @@
 var data = [
-{"year":1,"HomeRuns":20, "Awards": "Rookie of the Year", "obp":356 , "ops":.828, "war":3.9, "walk": 57, "avg": 274, "RBI": 68 },
-{"year":2,"HomeRuns":4, "Awards": "N/A", "obp":326 , "ops":.736, "war":1.2, "walk": 16, "avg": 236, "RBI": 23},
-{"year":3,"HomeRuns":0, "Awards": "N/A", "obp":0 , "ops":0, "war":0, "walk":0 , "avg": 0 , "RBI": 0},
-{"year":4,"HomeRuns":41 , "Awards": "All-Star, MVP", "obp":411 , "ops":1.078, "war":10.6, "walk": 66, "avg": 345, "RBI": 110},
-{"year":5,"HomeRuns":51, "Awards": "All-Star", "obp":400 , "ops":1.059, "war":9.0, "walk": 79, "avg": 319, "RBI": 127},
-{"year":6,"HomeRuns":36, "Awards": "All-Star", "obp":369 , "ops":.926, "war":7.6, "walk": 68, "avg": 296, "RBI": 84},
-{"year":7,"HomeRuns":35, "Awards": "All-Star, Golden Glove ", "obp":407 , "ops":1.033, "war":8.3, "walk": 76, "avg": 333, "RBI": 97},
-{"year":8,"HomeRuns":29, "Awards": "All-Star, Golden Glove", "obp":419 , "ops":1.002, "war":10.2, "walk": 78, "avg": 347, "RBI": 96},
-{"year":9,"HomeRuns":34, "Awards": "All-Star, Golden Glove", "obp":381 , "ops":.964, "war":7.8, "walk": 65, "avg": 313, "RBI": 104},
-{"year":10,"HomeRuns":29, "Awards": "All-Star, Golden Glove", "obp":381 , "ops":.936, "war":9.5, "walk": 61, "avg": 319, "RBI": 103},
-{"year":11,"HomeRuns":40, "Awards": "All-Star, Golden Glove", "obp":393 , "ops":.977, "war":8.7, "walk": 81, "avg": 308, "RBI": 123},
-{"year":12,"HomeRuns":49, "Awards": "All-Star, Golden Glove", "obp":384 , "ops":.999, "war":10.5, "walk": 78, "avg": 304, "RBI": 141},
-{"year":13,"HomeRuns":38, "Awards": "All-Star, Golden Glove", "obp":380 , "ops":.962, "war":10.6, "walk": 66, "avg": 314, "RBI": 103},
-{"year":14,"HomeRuns":47, "Awards": "All-Star, Golden Glove", "obp":383 , "ops":.990, "war":11.0, "walk": 82, "avg": 296, "RBI": 111},
-{"year":15,"HomeRuns":52, "Awards": "All-Star, Golden Glove", "obp":398 , "ops":1.043, "war":11.2, "walk": 76, "avg": 317, "RBI": 112},
-{"year":16,"HomeRuns":37, "Awards": "All-Star, Golden Glove", "obp":368 , "ops":.924, "war":9.0, "walk": 70, "avg": 288, "RBI": 103},
-{"year":17,"HomeRuns":22, "Awards": "All-Star, Golden Glove", "obp":334 , "ops":.787, "war":4.3, "walk": 51, "avg": 263, "RBI": 70},
-{"year":18,"HomeRuns":23, "Awards": "All-Star, Golden Glove", "obp":372 , "ops":.860, "war":6.2, "walk": 67, "avg": 289, "RBI": 79},
-{"year":19,"HomeRuns":13, "Awards": "All-Star", "obp":362 , "ops":.798, "war":3.0, "walk": 49, "avg": 283, "RBI": 58},
-{"year":20,"HomeRuns":28, "Awards": "All-Star", "obp":390 , "ops":.897, "war":5.2, "walk": 79, "avg": 291, "RBI": 83},
-{"year":21,"HomeRuns":18, "Awards": "All-Star", "obp":425 , "ops":.907, "war":6.3, "walk": 112, "avg": 271, "RBI": 61},
-{"year":22,"HomeRuns":8, "Awards": "All-Star", "obp":400 , "ops":.802, "war":0.9, "walk": 60, "avg": 250, "RBI": 22},
-{"year":23,"HomeRuns":6, "Awards": "All-Star", "obp":303 , "ops":.647, "war":-0.0, "walk": 27, "avg": 211, "RBI": 25}
+{"year":1,"HomeRuns":16, "Awards": "N/A", "obp":330 , "ops":.746, "war":3.5, "walk": 65, "avg": 223, "RBI": 48},
+{"year":2,"HomeRuns":25,"Awards": "N/A", "obp":329 , "ops":.821, "war":5.8, "walk": 54, "avg": 261, "RBI": 59},
+{"year":3,"HomeRuns":24, "Awards": "N/A", "obp":368 , "ops":.859, "war":6.2, "walk": 72, "avg": 283, "RBI": 58},
+{"year":4,"HomeRuns":19, "Awards": "N/A", "obp":351 , "ops":.777, "war":8.0, "walk": 93, "avg": 248, "RBI": 58},
+{"year":5,"HomeRuns":33, "Awards": "All-Star, Golden Glove, Silver Slugger, MVP", "obp":406 , "ops":.970, "war":9.7, "walk": 93, "avg": 301, "RBI": 114},
+{"year":6,"HomeRuns":25, "Awards": "Golden Glove, Silver Slugger", "obp":410 , "ops":.924, "war":7.9, "walk": 107, "avg": 292, "RBI": 116},
+{"year":7,"HomeRuns":34, "Awards": "All-Star, Golden Glove, Silver Slugger, MVP", "obp":456 , "ops":1.080, "war":9.0, "walk": 127, "avg": 311, "RBI": 103},
+{"year":8,"HomeRuns":46, "Awards": "All-Star, Golden Glove, Silver Slugger, MVP", "obp":458 , "ops":1.136, "war":9.9, "walk": 126, "avg": 336, "RBI": 123},
+{"year":9,"HomeRuns":37, "Awards": "All-Star, Golden Glove, Silver Slugger", "obp":426 , "ops":1.073, "war":6.2, "walk": 74, "avg": 312, "RBI": 81},
+{"year":10,"HomeRuns":33, "Awards": "All-Star", "obp":431 , "ops":1.009, "war":7.5, "walk": 120, "avg": 294, "RBI": 104},
+{"year":11,"HomeRuns":42, "Awards": "All-Star, Golden Glove, Silver Slugger", "obp":461 , "ops":1.076, "war":9.6, "walk": 151, "avg": 308, "RBI": 129},
+{"year":12,"HomeRuns":40, "Awards": "All-Star, Golden Glove, Silver Slugger", "obp":446 , "ops":1.031, "war":8.1, "walk": 145, "avg": 291, "RBI": 101},
+{"year":13,"HomeRuns":37, "Awards": "All-Star, Golden Glove", "obp":438 , "ops":1.047, "war":8.1, "walk": 130, "avg": 303, "RBI": 122},
+{"year":14,"HomeRuns":34, "Awards": "All-Star", "obp":389 , "ops":1.006, "war":3.8, "walk": 73, "avg": 262, "RBI": 83},
+{"year":15,"HomeRuns":49, "Awards": "All-Star, Silver Sluger", "obp":440 , "ops":1.127, "war":7.7, "walk": 117, "avg": 306, "RBI": 106},
+{"year":16,"HomeRuns":73, "Awards": "All-Star, Silver Sluger, MVP", "obp":515 , "ops":1.379, "war":11.9, "walk": 177, "avg": 328, "RBI": 137},
+{"year":17,"HomeRuns":46, "Awards": "All-Star, Silver Sluger, MVP", "obp":582 , "ops":1.381, "war":11.8, "walk": 198, "avg": 370, "RBI": 110},
+{"year":18,"HomeRuns":45, "Awards": "All-Star, Silver Sluger, MVP", "obp":529 , "ops":1.278, "war":9.2, "walk": 148, "avg": 341, "RBI": 90},
+{"year":19,"HomeRuns":45, "Awards": "All-Star, Silver Sluger, MVP", "obp":609 , "ops":1.422, "war":10.6, "walk": 232, "avg": 362, "RBI": 101},
+{"year":20,"HomeRuns":5, "Awards": "N/A", "obp":404 , "ops":1.071, "war":0.6, "walk": 9, "avg": 286, "RBI": 10},
+{"year":21,"HomeRuns":26, "Awards": "N/A", "obp":454 , "ops":.999, "war":4.0, "walk": 115, "avg": 270, "RBI": 77},
+{"year":22,"HomeRuns":28, "Awards": "N/A", "obp":480 , "ops":1.045, "war":3.4, "walk": 132, "avg": 276, "RBI": 66}
 
 ];
 
@@ -63,17 +62,17 @@ var year = svg.append("text")
 		      .attr("x", 500)
 		      .text("Year");
 
-					var ref = svg.append("text")
-												      .attr("y", 580)
-												      .attr("x", 800)
-															.style("font-size", "10px")
-												      .text("baseball-reference.com");
+var ref = svg.append("text")
+							      .attr("y", 580)
+							      .attr("x", 800)
+										.style("font-size", "10px")
+							      .text("baseball-reference.com");
 
-															var title = svg.append("text")
-																														.attr("y", 50)
-																														.attr("x", 370)
-																														.style("font-size", "30px")
-																														.text("Home Runs by Season");
+										var title = svg.append("text")
+																									.attr("y", 50)
+																									.attr("x", 370)
+																									.style("font-size", "30px")
+																									.text("Home Runs by Season");
 
 
 var chart = svg
@@ -94,7 +93,7 @@ chart.append("g")
 
 
 var colorScale = d3.scale.linear()
-    .range(['#000000','#B8860B'])
+    .range(['#000000', '#B8860B'])
     .domain([10, 70]);
 
 var Tool = d3.select("body")
@@ -121,7 +120,7 @@ var bars = chart.selectAll(".bar")
 		  			.attr("x", function(d) { return x(d.year) - 20; })
 		  			.style("cursor", "pointer")
 		  			.attr("width", 40)
-            .style("fill", "#EDE3D1")
+            .style("fill", "#F5F5DC")
 		  			Tool
                       .transition()
                       .duration(1000)
@@ -179,7 +178,7 @@ var bars = chart.selectAll(".bar")
 
 					d3.selectAll('svg')
 												.append('image')
-												.attr('xlink:href','https://upload.wikimedia.org/wikipedia/commons/d/d3/Army_logo.png')
+												.attr('xlink:href','https://cdn2.iconfinder.com/data/icons/medical-line-5/512/syringe_injection_drug_steroid-512.png')
 												.attr('height', '100')
 												.attr('width', '100')
 												.attr('x', '840')

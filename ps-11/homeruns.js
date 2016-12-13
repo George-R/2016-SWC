@@ -31,7 +31,7 @@ var width = 950 - margin.left - margin.right;
 var height = 600 - margin.top - margin.bottom;
 
 var x = d3.scale.linear()
-	.domain([0,25])
+	.domain([0,23])
     .range([0, width]);
 
 var y = d3.scale.linear()
@@ -49,7 +49,7 @@ var yAxis = d3.svg.axis()
 var svg =	d3.select("body")
 			.append("svg")
 			.attr("class", "chart")
-			.attr("width", width + margin.right)
+			.attr("width", width + margin.left + margin.right)
 			.attr("height", height + margin.top + margin.bottom);
 
 var HomeRuns = svg.append("text")
@@ -62,6 +62,18 @@ var year = svg.append("text")
 		      .attr("y", 580)
 		      .attr("x", 500)
 		      .text("Year");
+
+					var ref = svg.append("text")
+												      .attr("y", 580)
+												      .attr("x", 800)
+															.style("font-size", "10px")
+												      .text("baseball-reference.com");
+
+var title = svg.append("text")
+															.attr("y", 50)
+															.attr("x", 370)
+															.style("font-size", "30px")
+															.text("Home Runs by Season");
 
 var chart = svg
 			.append("g")
@@ -81,7 +93,7 @@ chart.append("g")
 
 
 var colorScale = d3.scale.linear()
-    .range(['#070923','#6d4ca3'])
+    .range(['#000066','#808080'])
     .domain([20, 80]);
 
 var Tool = d3.select("body")
@@ -90,17 +102,6 @@ var Tool = d3.select("body")
                       .attr("class", "mytooltip")
                       .style("opacity", "0.6")
                       .style("display", "none");
-
-var Tool2 = d3.select("body")
-
-										  .append("div")
-		                  .attr("class", "mytooltip")
-		                  .style("opacity", "0.6")
-			                .style("display", "none");
-
-
-
-
 
 
 var bars = chart.selectAll(".bar")
@@ -119,7 +120,7 @@ var bars = chart.selectAll(".bar")
 		  			.attr("x", function(d) { return x(d.year) - 20; })
 		  			.style("cursor", "pointer")
 		  			.attr("width", 40)
-            .style("fill", "yellow")
+            .style("fill", "#EDE3D1")
 		  			Tool
                       .transition()
                       .duration(1000)
@@ -132,30 +133,28 @@ var bars = chart.selectAll(".bar")
 
 
                     Tool
+                      .text(
+                      "Hello"
+                      )
+											.html("<br/> Avg: ."
+											+d.avg
+											+"<br/> RBIs: "
+																	+ d.RBI
+																																						+ "<br/> HRs: "
+																																						+ d.HomeRuns
+																																						+" <br/> Walks: "
+																																						+d.walk
+																																						+" <br/> OBP: ."
+																																						+d.obp
 
-											.html(
-												"<br/> Avg: ."
-												+d.avg
-												+"<br/> RBIs: "
-											              + d.RBI
-											                                                        + "<br/> HRs: "
-											                                                        + d.HomeRuns
-																																							+" <br/> Walks: "
-																																							+d.walk
-																																							+" <br/> OBP: ."
-																																							+d.obp
-
-																																							+"<br/> OPS: "
-																																							+d.ops
-																																							+"<br/> WAR: "
-																																							+d.war
-											                                                        + "<br/> "
-																																							+ "<br/> "
-																																							+"<br/> Awards: "
-											                                                        + d.Awards)
-
-
-
+																																						+"<br/> OPS: "
+																																						+d.ops
+																																						+"<br/> WAR: "
+																																						+d.war
+																																						+ "<br/> "
+																																						+ "<br/> "
+																																						+"<br/> Awards: "
+																																						+ d.Awards)
 
                       .style("right", (d3.event.pageX) + d3.event.pageX )
                       .style("top", (d3.event.pageY) + d3.event.pageY)
@@ -179,17 +178,13 @@ var bars = chart.selectAll(".bar")
 
 		      });
 
+					d3.selectAll('svg')
+												.append('image')
+												.attr('xlink:href','https://cdn2.iconfinder.com/data/icons/medical-line-5/512/syringe_injection_drug_steroid-512.png')
+												.attr('height', '100')
+												.attr('width', '100')
+												.attr('x', '840')
+												.attr('y', '0')
+												.on ("mouseover", function (d){
 
-
-	d3.selectAll('svg')
-					      .append('image')
-					      .attr('xlink:href','https://cdn2.iconfinder.com/data/icons/medical-line-5/512/syringe_injection_drug_steroid-512.png')
-					      .attr('height', '100')
-					      .attr('width', '100')
-					      .attr('x', '750')
-					      .attr('y', '0')
-								.on ("mouseover", function (d){
-									d3.select('narrtive')
-									.transition()
-									.style("opacity", "1")
-								});
+												});
